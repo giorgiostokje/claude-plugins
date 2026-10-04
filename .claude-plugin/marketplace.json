@@ -1,0 +1,34 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "giorgiostokje",
+  "description": "Giorgio Stokje's Claude Code plugins.",
+  "owner": {
+    "name": "Giorgio Stokje",
+    "url": "https://github.com/giorgiostokje"
+  },
+  "plugins": [
+    {
+      "name": "bottomline",
+      "description": "A modular status line for Claude Code, pre-packed with themes, statistics and skills.",
+      "author": {
+        "name": "Giorgio Stokje"
+      },
+      "category": "productivity",
+      "source": {
+        "source": "github",
+        "repo": "giorgiostokje/bottomline",
+        "ref": "main"
+      },
+      "homepage": "https://bottomline.sh"
+    },
+    {
+      "name": "cache-warmer",
+      "description": "Keeps the prompt cache warm: just before it would expire, re-sends the cached prefix as a silent fork.",
+      "author": {
+        "name": "Giorgio Stokje"
+      },
+      "category": "productivity",
+      "source": "./cache-warmer"
+    }
+  ]
+}

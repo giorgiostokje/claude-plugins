@@ -1,0 +1,32 @@
+{
+  "name": "cache-warmer",
+  "version": "0.3.0",
+  "description": "Keeps the prompt cache warm: just before it would expire, re-sends the cached prefix as a silent fork.",
+  "author": {
+    "name": "Giorgio Stokje",
+    "url": "https://github.com/giorgiostokje"
+  },
+  "repository": "https://github.com/giorgiostokje/claude-plugins",
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "leadSeconds": {
+      "type": "number",
+      "title": "Lead time (seconds)",
+      "description": "How long before expiry the warm-up request goes out. It only has to cover the 5s check interval plus request latency.",
+      "default": 30
+    },
+    "maxWarmups": {
+      "type": "number",
+      "title": "Max warm-ups while idle",
+      "description": "0 (default) stops at break-even: once the pings would cost more than rebuilding the cache. Any other number is a hard cap on consecutive pings.",
+      "default": 0
+    },
+    "showStatus": {
+      "type": "boolean",
+      "title": "Show status line countdown",
+      "description": "Show how long the cache stays warm in the status line.",
+      "default": true
+    }
+  }
+}
