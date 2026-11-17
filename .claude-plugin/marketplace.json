@@ -29,6 +29,15 @@
       },
       "category": "productivity",
       "source": "./cache-warmer"
+    },
+    {
+      "name": "vue-typescript-lsp",
+      "description": "TypeScript language server with the Vue TypeScript plugin: code intelligence for .vue, .ts, .tsx, .js and .jsx files.",
+      "author": {
+        "name": "Giorgio Stokje"
+      },
+      "category": "development",
+      "source": "./vue-typescript-lsp"
     }
   ]
 }
