@@ -1,0 +1,19 @@
+{
+  "vue-typescript": {
+    "command": "node",
+    "args": [
+      "${CLAUDE_PLUGIN_ROOT}/bin/vue-ts-lsp.mjs"
+    ],
+    "extensionToLanguage": {
+      ".vue": "vue",
+      ".ts": "typescript",
+      ".tsx": "typescriptreact",
+      ".mts": "typescript",
+      ".cts": "typescript",
+      ".js": "javascript",
+      ".jsx": "javascriptreact",
+      ".mjs": "javascript",
+      ".cjs": "javascript"
+    }
+  }
+}

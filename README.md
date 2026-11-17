@@ -15,6 +15,7 @@ Or inside Claude Code: `/plugin marketplace add giorgiostokje/claude-plugins`, t
 | --- | --- |
 | [bottomline](https://github.com/giorgiostokje/bottomline) | A modular status line for Claude Code, pre-packed with themes, statistics and skills. Lives in its own repo. |
 | [cache-warmer](./cache-warmer) | Keeps the prompt cache warm while you're away. |
+| [vue-typescript-lsp](./vue-typescript-lsp) | Code intelligence for Vue projects: definitions, references, hover, diagnostics and `.vue` document symbols. |
 
 ## cache-warmer
 
@@ -36,6 +37,16 @@ Options (in `/config`): `leadSeconds` (default 30), `maxWarmups` (0 = stop at br
 
 It is written against Claude Code's function-hooks plugin API (early access), so it needs a
 Claude Code build that has it.
+
+## vue-typescript-lsp
+
+A small Node wrapper around `typescript-language-server` for projects that mix `.vue` and `.ts` files. It loads `@vue/typescript-plugin` and answers document symbols for `.vue` files itself. Use it instead of the official `typescript-lsp` plugin, because both claim the same file extensions.
+
+```sh
+npm install -g typescript-language-server typescript @vue/typescript-plugin
+```
+
+Details and limits: [vue-typescript-lsp/README.md](./vue-typescript-lsp/README.md).
 
 ## License
 

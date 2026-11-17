@@ -1,0 +1,10 @@
+{
+  "name": "vue-typescript-lsp",
+  "version": "0.2.0",
+  "description": "TypeScript language server with the Vue TypeScript plugin and .vue document symbols: code intelligence for .vue, .ts, .tsx, .js and .jsx files. Replaces the official typescript-lsp plugin for Vue projects.",
+  "author": {
+    "name": "Giorgio Stokje",
+    "url": "https://github.com/giorgiostokje"
+  },
+  "license": "MIT"
+}
